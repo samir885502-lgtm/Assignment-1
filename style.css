@@ -1,0 +1,301 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    padding: 0 70ppx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo img{
+    width: 120px;
+    cursor: pointer;
+}
+.name ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.name ul li a{
+    text-decoration: none;
+    color: #a3a1a1;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 3s;
+}
+.name ul li a:hover{
+    color: brown;
+
+}
+.btn{
+    text-decoration: none;
+    background: blue;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 3s;
+}
+.btn a:hover{
+    color:brown;
+}
+.hero{
+    background-image: url(assets/banner.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-contant{
+    text-align: center;
+    color: white;
+    max-width: 700px;
+}
+.hero-contant h1{
+    font-size: 64px;
+    font-width: 800;
+    margin-bottom: 20px;
+}
+.hero-contant p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+.hero a{
+    display: inline-block;
+    text-decoration: none;
+    background: blue;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-width: 600;
+
+}
+.hero a:hover{
+    background: brown;
+}
+.speakers{
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+
+    
+}
+.speakers h2{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-bottom: 60px;
+    background: red;
+
+}
+.speaker-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+.card{
+    background: white;
+    border-radius: 12px;
+    
+}
+.card-content span{
+    color: blue;
+    margin-top: 8px;
+  }
+
+ .card-content p{
+    color: rgb(118, 111, 111);
+    margin-top: 8px;
+ } 
+.card-content h3{
+    margin-top: 8px;
+    color: brown;
+}
+.pricing{
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.pricing h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: brown;
+}
+.sub{
+    text-align: center;
+    color: brown;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 60px;
+}
+.pricing-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.price-card{
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.price-card h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.price-card h1{
+    font-size: 56px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.price-text{
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.list{
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.list li{
+    margin: 12px 0;
+    color: #374151;
+    font-size: 15px;
+}
+
+.price-btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: brown;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.price-btn:hover{
+    background: brown;
+}
+
+.active{
+    background: #111827;
+}
+
+.active h1,
+.active h3,
+.active .price-text,
+.active .list li{
+    color: white;
+}
+/* FAQ Section */
+
+.faq{
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.faq-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-title h2{
+    font-size: 48px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.faq-title p{
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.faq-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.faq-box{
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 30px;
+    transition: .3s;
+}
+
+.faq-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.faq-box h3{
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.faq-box p{
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 1.7;
+}
+.footer{
+    background: #111827;
+    margin-top: 100px;
+    padding: 70px 0;
+
+}
+.footer-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.footer-logo{
+    width: 70px;
+}
+.footer-logo h2{
+    color: white;
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: 800;
+}
+.footer p{
+    color: white;
+    margin: 26px auto;
+    max-width: 6500px;
+    line-height: 1.8;
+}
